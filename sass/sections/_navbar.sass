@@ -35,8 +35,10 @@
   color: #ffffff
   transition: 0.2s
   transform: translateY(-100%)
+  opacity: 0
   &_active
-    translate: 0  
+    transform: translateY(0)
+    opacity: 1
   &__nav
     display: flex
     align-items: center
@@ -75,3 +77,18 @@
     display: block
     font-size: 15px
     color: $text-color-light
+
+@media screen and (max-width: 991px)
+  .navbar
+    &__mobile, &__land-line
+      display: none
+@media screen and (max-width: 576px)
+  .logo
+      display: none
+  .menu
+    &-button
+      height: 60px
+    &__nav
+      flex-direction: column
+    &__link
+      margin-bottom: 10px
