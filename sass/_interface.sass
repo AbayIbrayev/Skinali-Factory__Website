@@ -9,6 +9,7 @@ body
   +bold
   color: $primary
   background-color: #fff
+  cursor: pointer
 .button
   text-transform: uppercase
   padding: 17px 45px
@@ -16,6 +17,31 @@ body
   background-color: $primary
   color: #ffffff
   +bold
+  cursor: pointer
+.bg-secondary
+  background: $bg-secondary
+.input
+  height: 80px
+  padding-left: 30px
+.checkbox
+  display: none
+  &:checked + label:before
+      content: '\2714'
+      font-size: 30px
+      text-align: center
+      color: $primary
+.checkbox
+  &-label
+    display: flex
+    align-items: center
+    margin-right: 40px
+    cursor: pointer
+    &:before
+      content: ''
+      height: 30px
+      width: 30px
+      border: 1px solid #dddd
+      margin-right: 20px
 
 @media screen and (max-width: 576px)
   .button-o
