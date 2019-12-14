@@ -1,0 +1,57 @@
+.catalog
+  background-color: $bg-secondary
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__card
+    margin-bottom: 30px
+  &-card
+    max-width: 570px
+    position: relative
+    box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1)
+    &__buttons
+      position: absolute
+      bottom: 0
+      right: 0
+      display: flex
+    &__button
+      padding: 10px
+      text-transform: uppercase
+      font-size: 11px
+      border: none
+      cursor: pointer
+      height: 30px
+    &__tag
+      position: absolute
+      top: 10px
+      left: 10px
+      font-size: 12px
+      color: #ffffff
+      padding: 10px
+      background-color: rgba($primary, 0.6)
+      text-transform: uppercase
+    &__img
+      display: block
+  &__link
+    text-align: center
+    margin-top: 60px
+  &__link-more
+    display: inline-block
+    margin-bottom: 24px
+  &__description
+    display: block
+
+@media screen and (max-width: 1199px)
+  .catalog
+    &-block
+      justify-content: center
+    &-card
+      max-width: 470px
+@media screen and (max-width: 576px)
+  .catalog
+    &-card
+      &__tag
+        top: 0
+        left: 0
+        font-size: 10px
