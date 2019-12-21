@@ -782,7 +782,7 @@ img {
   opacity: 1;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -796,6 +796,81 @@ img {
 @media screen and (max-width: 480px) {
   .price-card__text {
     font-size: 12px;
+  }
+}
+
+.steps {
+  background-color: #f1f1f1;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.step__text {
+  max-width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step__title {
+  font-size: 18px;
+}
+
+.step::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: rgba(123, 123, 121, 0.8);
+  display: block;
+  position: absolute;
+  top: 25%;
+  right: -59%;
+}
+
+.step:last-child::before {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .step {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+  .step::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .steps-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .step {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .step {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
