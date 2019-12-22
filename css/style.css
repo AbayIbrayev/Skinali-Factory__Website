@@ -351,11 +351,19 @@ img {
 
 .offer-block {
   margin-top: -180px;
-  background: #fff url("../img/offer/form-bg.png") no-repeat center right;
-  background-size: contain;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   padding: 80px;
+}
+
+.offer-block_calc-bg {
+  background: #fff url("../img/offer/form-bg-calc.png") no-repeat center right;
+  background-size: contain;
+}
+
+.offer-block_price-bg {
+  background: #fff url("../img/offer/form-bg-price.png") no-repeat center right;
+  background-size: contain;
 }
 
 .offer__title {
@@ -369,6 +377,7 @@ img {
   font-size: 21px;
   display: block;
   margin-bottom: 48px;
+  max-width: 730px;
 }
 
 .form__row {
@@ -407,15 +416,25 @@ img {
   height: 80px;
 }
 
+.form__policy {
+  margin-left: 45px;
+}
+
 @media screen and (max-width: 1199px) {
   .offer-block {
     background-position: center right -120px;
+  }
+  .form__policy {
+    margin-left: 25px;
   }
 }
 
 @media screen and (max-width: 991px) {
   .offer-block {
     background-position: center right -185px;
+  }
+  .form__policy {
+    max-width: 300px;
   }
 }
 
@@ -442,6 +461,12 @@ img {
   }
   .form__input {
     margin-bottom: 20px;
+  }
+  .form__policy {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 25px;
+    max-width: 100%;
   }
 }
 
