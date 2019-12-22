@@ -1,0 +1,20 @@
+.contacts
+  &-block
+    display: flex
+    justify-content: space-around
+    &__item
+      text-align: center
+  &__image
+    margin-bottom: 25px
+  &-text
+    color: $text-color
+  &__text
+    font-size: 16px
+  &__link
+    text-decoration: none
+@media screen and (max-width: 768px)
+  .contacts
+    &-block
+      flex-direction: column
+    &__text
+      margin-bottom: 40px
