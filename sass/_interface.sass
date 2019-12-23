@@ -22,6 +22,7 @@ img
   background-color: #fff
   cursor: pointer
   text-decoration: none
+  outline: none
 .button
   text-transform: uppercase
   padding: 17px 45px
@@ -31,6 +32,7 @@ img
   +bold
   cursor: pointer
   text-decoration: none
+  outline: none
   &-fitting
     color: $primary
     background-color: #ffffff
@@ -55,6 +57,41 @@ img
       font-size: 30px
       text-align: center
       color: $primary
+.select
+  height: 80px
+  width: 100%
+  position: relative
+  border: 1px solid #dddddd
+  cursor: pointer
+  outline: none
+  &::after
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 20px
+    width: 20px
+    height: 20px
+    background: url('../img/arrow-down.png') no-repeat center
+  &_checked
+    line-height: 80px
+    padding-left: 30px
+  &__dropdown
+    position: absolute
+    top: 80px
+    width: 100%
+    background-color: #ffffff
+    border: 1px solid #dddddd
+    list-style: none
+    margin: 0
+    padding: 0
+    display: none
+    &_open
+      display: block
+  &__option
+    padding: 20px
+    &:hover   
+      background-color: $bg-secondary
 .checkbox
   &-label
     display: flex
