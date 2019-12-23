@@ -6,6 +6,7 @@
 			<meta http-equiv="X-UA-Compatible" content="ie=edge">
 			<link rel="stylesheet" href="css/style.css">
 			<link rel="stylesheet" href="css/normalize.css">
+			<link rel="stylesheet" href="css/twentytwenty.css">
 			<title>Skinali Factory</title>
 		</head>
 		<body>
@@ -435,6 +436,45 @@
 <!-- ------------------------------- /steps -------------------------------- -->
 
 
+					<section class="section before">
+						<div class="container">
+							<h2 class="section-title section__title">Before and after</h2>
+							
+							<div class="before-slider-wrap">
+								<div class="before-slider">
+									<div class="before-slider__item">
+										<div class="before-after">
+											<img src="img/before/before-1.jpg" alt="before-image" class="before-after-image">
+											<img src="img/before/after-1.jpg" alt="after-image" class="before-after-image">
+										</div>
+									</div>
+									<div class="before-slider__item">
+										<div class="before-after">
+											<img src="img/before/before-2.jpg" alt="before-image" class="before-after-image">
+											<img src="img/before/after-2.jpg" alt="after-image" class="before-after-image">
+										</div>
+									</div>
+									<div class="before-slider__item">
+										<div class="before-after">
+											<img src="img/before/before-3.jpg" alt="before-image" class="before-after-image">
+											<img src="img/before/after-3.jpg" alt="after-image" class="before-after-image">
+										</div>
+									</div>
+								</div>
+
+								<div class="before-slider-arrows">
+									<button class="arrow arrow-left">
+										<img src="img/before/left.png" alt="before-arrow" class="">
+									</button>
+									<button class="arrow arrow-right">
+										<img src="img/before/right.png" alt="before-arrow" class="">
+									</button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+
 					<section class="section reviews bg-secondary">
 						<div class="container">
 								<h2 class="section-title section__title">Our customer reviews</h2>
@@ -567,7 +607,7 @@
 
 <!-- -------------------------------- /map --------------------------------- -->
 
-					<section class="section questions">
+					<section class="section questions bg-secondary">
 						<div class="container">
 							<div class="questions-block">
 								<h3 class="questions__title">Have questions?</h3>
@@ -618,6 +658,34 @@
 
 <!-- ------------------------------- /footer ------------------------------- -->
 
+<!-- ---------------------------- spikmi widget ---------------------------- -->
 				<script type="text/javascript" src="https://spikmi.com/Widget?Id=2175"></script>
+
+<!-- ------------------------------- jquery -------------------------------- -->
+				<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+				<script src="js/jquery.event.move.js"></script>
+<!-- ------------------------- twentytwenty plugin ------------------------- -->
+				<script src="js/jquery.twentytwenty.js"></script>
+
+<!-- -------------------------------- slick -------------------------------- -->
+				<script src="js/slick.min.js"></script>
+
+				<script>
+					$(window).load(function() {
+						$(".before-after").twentytwenty({
+							before_label: 'Without Skimali',
+							after_label: 'With Skimali'
+						});
+						$(".before-slider").slick({
+							draggable: false,
+							touchMove: false,
+							swipe: false,
+							dots: true,
+							dotsClass: 'before-slider__dots',
+							prevArrow: $('.arrow-left'),
+							nextArrow: $('.arrow-right')
+						});
+					});
+				</script>
 		</body>
 		</html>
