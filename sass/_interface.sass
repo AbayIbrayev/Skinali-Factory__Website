@@ -64,18 +64,18 @@ img
   border: 1px solid #dddddd
   cursor: pointer
   outline: none
-  &::after
-    content: ''
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    right: 20px
-    width: 20px
-    height: 20px
-    background: url('../img/arrow-down.png') no-repeat center
   &_checked
     line-height: 80px
     padding-left: 30px
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: 20px
+      width: 20px
+      height: 20px
+      background: url('../img/arrow-down.png') no-repeat center
   &__dropdown
     position: absolute
     top: 80px

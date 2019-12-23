@@ -139,7 +139,12 @@ img {
   outline: none;
 }
 
-.select::after {
+.select_checked {
+  line-height: 80px;
+  padding-left: 30px;
+}
+
+.select_checked::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -149,11 +154,6 @@ img {
   width: 20px;
   height: 20px;
   background: url("../img/arrow-down.png") no-repeat center;
-}
-
-.select_checked {
-  line-height: 80px;
-  padding-left: 30px;
 }
 
 .select__dropdown {

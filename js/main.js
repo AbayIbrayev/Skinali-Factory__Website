@@ -36,4 +36,16 @@ $(window).load(function () {
     $('.select_checked').text(value);
     $('.select__dropdown').toggleClass('select__dropdown_open');
   });
+
+
+/* -------------------------- anchor links settings ------------------------- */
+
+  $('a[href^="#"]').click(function() {
+    var _href = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(_href).offset().top - 130 + 'px' });
+    return false;
+  });
+
+/* -------------------------- masked input settings ------------------------- */
+  $('input[type="tel"]').mask("+9 (999) 999-99-99?9");
 });

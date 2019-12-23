@@ -14,13 +14,13 @@
 					<div class="menu">
 						<div class="container">
 							<nav class="menu__nav">
-								<a href="#" class="menu__link">Main</a>
-								<a href="#" class="menu__link">Products</a>
-								<a href="#" class="menu__link">Catalog</a>
-								<a href="#" class="menu__link">Work Samples</a>
-								<a href="#" class="menu__link">Try it</a>
-								<a href="#" class="menu__link">Prices</a>
-								<a href="#" class="menu__link">About us</a>
+								<a href="#main" class="menu__link">Main</a>
+								<a href="#features" class="menu__link">Features</a>
+								<a href="#catalog" class="menu__link">Catalog</a>
+								<a href="#blog" class="menu__link">Blog</a>
+								<a href="#price" class="menu__link">Prices</a>
+								<a href="#before" class="menu__link">Try it</a>
+								<a href="#about" class="menu__link">About us</a>
 							</nav>
 						</div>
 					</div>
@@ -55,7 +55,7 @@
 									<a href= "mailto:info@mail.cu" class="navbar__email navbar__small-text">info@mail.cu</a>
 								</div>
 								
-								<button class="button-o navbar__button">get advice</button>
+								<a href="#advice" class="button-o navbar__button">get advice</a>
 							</div>
 
 						</div>
@@ -71,9 +71,9 @@
 							<span class="hero__subtitle">
 								From 37 £ per m<sup>2</sup>
 							</span>
-							<button class="button hero__button">
+							<a href="#offer" class="button hero__button">
 								Order now
-							</button>
+							</a>
 						</div>
 					</div>
 
@@ -84,8 +84,8 @@
 
 <!-- ------------------------------- /header ------------------------------- -->
 
-				<main>
-					<section class="offer bg-secondary">
+				<main id="main">
+					<section class="offer bg-secondary" id="offer">
 						<div class="container">
 							<div class="offer__block offer-block offer-block_calc-bg">
 								<h2 class="offer__title">Leave a request for us</h2>
@@ -95,10 +95,6 @@
 									<div class="form__row">
 										<div class="form__group">
 											<label for="" class="form__label">Type of glass</label>
-											<!-- <select class="input form__input">
-												<option value="With a Seal">With a Seal</option>
-												<option value="Without a Seal">Without a Seal</option>
-											</select> -->
 											<input type="hidden" name="type" id="select-type" value="With a Seal">
 											<div class="select form__select">
 												<div class="select_checked">With a Seal</div>
@@ -110,11 +106,11 @@
 										</div>
 										<div class="form__group">
 											<label for="" class="form__label">Width, cm</label>
-											<input type="text" class="input form__input">
+											<input type="number" class="input form__input">
 										</div>
 										<div class="form__group">
 											<label for="" class="form__label">Height, cm</label>
-											<input type="text" class="input form__input">
+											<input type="number" class="input form__input">
 										</div>
 									</div>
 
@@ -151,7 +147,7 @@
 
 <!-- ------------------------------- /offer -------------------------------- -->
 
-					<section class="features section">
+					<section class="features section" id="features">
 						<div class="container">
 							<h2 class="section-title section__title">Our Advantages</h2>
 
@@ -186,7 +182,7 @@
 
 <!-- ------------------------------ /features ------------------------------ -->
 
-					<section class="section catalog bg-secondary">
+					<section class="section catalog bg-secondary" id="catalog">
 						<div class="container">
 							<h2 class="section-title section__title">Skinali catalog</h2>
 							<div class="catalog-block">
@@ -266,7 +262,7 @@
 
 <!-- -------------------------------- /catalog --------------------------------- -->
 
-					<section class="section blog">
+					<section class="section blog" id="blog">
 						<div class="container">
 							<div class="blog__heading">
 								<h3 class="blog__title">Useful things you might need to know about skinali...</h3>
@@ -313,7 +309,7 @@
 
 <!-- ------------------------------ /blog-list ------------------------------ -->
 
-					<section class="section price">
+					<section class="section price" id="price">
 						<div class="container">
 							<h2 class="section-title section__title">Prices and Types of Skinali</h2>
 
@@ -447,7 +443,7 @@
 <!-- ------------------------------- /steps -------------------------------- -->
 
 
-					<section class="section before">
+					<section class="section before" id="before">
 						<div class="container">
 							<h2 class="section-title section__title">Before and after</h2>
 							
@@ -521,7 +517,7 @@
 
 					</section>
 
-<!-- ------------------------------ /revires ------------------------------- -->
+<!-- ------------------------------ /review ------------------------------- -->
 
 					<section class="offer">
 						<div class="container">
@@ -557,7 +553,7 @@
 
 <!-- ------------------------------- /offer -------------------------------- -->
 
-					<section class="section factory">
+					<section class="section factory" id="about">
 						<div class="container">
 							<h2 class="section-title section__title">About Production</h2>
 
@@ -618,7 +614,7 @@
 
 <!-- -------------------------------- /map --------------------------------- -->
 
-					<section class="section questions bg-secondary">
+					<section class="section questions bg-secondary" id="advice">
 						<div class="container">
 							<div class="questions-block">
 								<h3 class="questions__title">Have questions?</h3>
@@ -680,6 +676,9 @@
 
 <!-- -------------------------------- slick -------------------------------- -->
 				<script src="js/slick.min.js"></script>
+
+<!-- ------------------------ masked input settings ------------------------ -->
+				<script src="js/jquery.maskedinput.min.js"></script>
 
 				<script src="js/main.js"></script>
 		</body>
