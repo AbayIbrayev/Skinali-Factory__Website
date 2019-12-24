@@ -18,6 +18,27 @@ $(window).load(function () {
     prevArrow: $('.arrow-left'),
     nextArrow: $('.arrow-right')
   });
+  
+/* ---------------------- reviews slick slider settings --------------------- */
+  
+  $(".reviews-slider").slick({
+    autoplay: true,
+    arrows: false,
+    slidesToShow: 3,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ],
+  });
 
 /* ---------------------------- humburger button ---------------------------- */
 
