@@ -1,3 +1,0 @@
-# Allow access to OptiPic.io integration script
-RewriteCond %{REQUEST_URI} ^/optipic.io/index.php
-RewriteRule ^(.*) $1 [QSA,L]
