@@ -48,4 +48,17 @@ $(window).load(function () {
 
 /* -------------------------- masked input settings ------------------------- */
   $('input[type="tel"]').mask("+9 (999) 999-99-99?9");
+
+/* -------- map display settings (only when the user scrolled to it to speed up the page) -------- */
+
+  var reviews = $('.reviews');
+  var reviewsTop = reviews.offset().top;
+  $(window).bind('scroll', function() {
+    var windowTop = $(this).scrollTop();
+    if (windowTop > reviewsTop) {
+      $(window).unbind('scroll');
+      $('#map').html('<script type="text/javascript" charset="utf-8" async src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4aa32e13aac285432c22ac1aead6557eaf34faff7815655f3256ed1dddedc25b&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false" ></script >');
+    }
+  });
+
 });
